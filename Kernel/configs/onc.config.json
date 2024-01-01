@@ -1,17 +1,17 @@
 [
   {
     "kernelSource": {
-      "name": "Redmi7（Proton）",
-      "repo": "https://github.com/PapiLer/Project-KARA",
-      "branch": "Kara-KSU",
+      "name": "Kara",
+      "repo": "https://github.com/sgrhmt/xonc",
+      "branch": "xr",
       "device": "onclite",
-      "defconfig": "onclite-perf_defconfig"
+      "defconfig": "onc-perf_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
+        "branch": "20210123",
         "name": "proton-clang",
         "binaryEnv": [
           "bin"
