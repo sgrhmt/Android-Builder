@@ -1,0 +1,40 @@
+[
+  {
+    "kernelSource": {
+      "name": "Redmi7（Proton）",
+      "repo": "https://github.com/PapiLer/Project-KARA",
+      "branch": "Kara-KSU",
+      "device": "onclite",
+      "defconfig": "onclite-perf_defconfig"
+    },
+    "enableCcache": true,
+    "toolchains": [
+      {
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
+    "params": {
+      "ARCH": "arm64",
+      "CC": "proton-clang/bin/clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "custom": {
+        "repo": "https://github.com/PapiLer/AnyKernel3",
+        "branch": "master"
+      }
+    },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
